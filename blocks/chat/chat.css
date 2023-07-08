@@ -19,6 +19,7 @@
     /* border-radius: 4px; */
     border: 0;
     font-weight: 700;
+    cursor: pointer;
   }
   
   .chat-body>div {
@@ -78,3 +79,16 @@
     color: black;
   }
   
+  .chat-header {
+    border-radius: 5px;
+  }
+
+  .chat-window {
+    border-radius: 5px;
+    width: 500px;
+  }
+
+
+  /* Q: 
+  A: 
+   */

@@ -1,14 +1,14 @@
 function sendMessage(socket, message) {
   if (message !== '') {
-    var chatMessage = {
-        type: 'chat',
-        sender: 'User',
-        text: message
-    };
+    // var chatMessage = {
+    //     type: 'chat',
+    //     sender: 'User',
+    //     text: message
+    // };
 
     
     // Send the message to the server
-    socket.send(JSON.stringify(chatMessage));
+    socket.send(message);
   }
 }
 
@@ -62,13 +62,13 @@ export default function decorate(block) {
       var message = document.getElementById('chat-input');
       if (message.value) {
         appendMessage(message.value);
-        document.getElementById('chat-input').value = '';
         sendMessage(socket, message.value);
+        document.getElementById('chat-input').value = '';
       }
     }
   }
 
-  var socket = new WebSocket('ws://10.40.42.93:8080/getAnswer'); // Replace with your WebSocket server URL
+  var socket = new WebSocket('ws://10.40.42.93:9090/getAnswer'); // Replace with your WebSocket server URL
   // var socket = new WebSocket('ws://localhost:3010'); // Replace with your WebSocket server URL
 
   socket.onopen = function() {

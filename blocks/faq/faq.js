@@ -17,19 +17,5 @@ function toggleAnswer() {
 }
 
 export default function decorate(block) {
-//     const faqSection = document.createElement('div');
-//     const tempChild = block.
-//     block.append
-
-//     block.innerHTML = `<div class="faq-section">
-//     <div class="faq-item">
-//       <div class="question">Question 1?</div>
-//       <div class="answer">Answer 1!</div>
-//     </div>
-//     <div class="faq-item">
-//       <div class="question">Question 2?</div>
-//       <div class="answer">Answer 2!</div>
-//     </div>
-//     <!-- Add more FAQ items as needed -->
-//   </div>`;
+    
 }

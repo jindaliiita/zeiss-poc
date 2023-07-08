@@ -154,6 +154,6 @@ export default async function decorate(block) {
   const locale = getLocale();
   const placeholders = await fetchPlaceholders(`${locale}`);
   const footerPath = cfg.footer || getAemTemplateUrl(locale);
-
+  console.log(footerPath);
   decorateFetch(block, footerPath, placeholders, locale);
 }
